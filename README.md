@@ -38,9 +38,6 @@ This station collects data from a diverse array of sensors and transmits it to a
 ---
 *Developed as part of my deep-dive into Hardware-Software integration and Embedded Systems.*
 
-**Contact & Networking:**
-[Link to your LinkedIn Profile]
-
 How to install Multi-HAL components on Android 13:
 hals.conf goes to ./out/target/product/emulator_x86_64/vendor/etc/sensors/hals.conf and ./device/devtitans/teia/hals.conf
 
