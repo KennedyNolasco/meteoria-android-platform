@@ -2,7 +2,7 @@
 #include <linux/usb.h>
 #include <linux/slab.h>
 
-MODULE_AUTHOR("Equipe 4, Turma 4 - DevTITANS");
+MODULE_AUTHOR("Kennedy Coelho Nolasco");
 MODULE_DESCRIPTION("Driver de acesso ao WeatherStation (ESP32 com Chip Serial CP2102");
 MODULE_LICENSE("GPL");
 
