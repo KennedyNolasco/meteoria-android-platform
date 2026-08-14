@@ -1,6 +1,6 @@
 # Meteoria
 
-Android/AOSP hardware integration project connecting an **ESP32 weather station** to Android through a custom Linux USB driver, native C++ components and Binder/AIDL.
+Android/AOSP hardware integration project connecting an **ESP32 weather station** to Android through a custom Linux USB driver, native C++ components, Binder/AIDL, and an Android application.
 
 ## Architecture
 
@@ -17,7 +17,10 @@ Native C++ Layer
 AIDL / Binder Service
       │
       ▼
-Android Manager / Client
+Android Manager
+      │
+      ▼
+Android App
 ```
 
 ## Tech Stack
@@ -29,6 +32,7 @@ Android Manager / Client
 * AIDL & Binder IPC
 * SELinux
 * Android Soong (`Android.bp`)
+* Android App
 * ESP32
 
 ## Highlights
@@ -38,6 +42,7 @@ Android Manager / Client
 * Native C++ Android components
 * Binder IPC between system components
 * Android Manager API using `ServiceManager`
+* Android application consuming the platform service
 * SELinux policies for the vendor service and hardware interface
 * ESP32 firmware and sensor integration
 
@@ -52,9 +57,3 @@ WeatherstationManager/          Android Manager API
 sepolicy/                       SELinux policies
 app/                            Android application
 ```
-
-## About
-
-Built as part of the **DevTITANS Android Embedded Systems program**.
-
-I implemented the complete integration stack, from the ESP32 firmware and Linux driver to the Android AIDL/Binder interface and client components.
